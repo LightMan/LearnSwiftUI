@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  learnSwiftUI
+
+  Created by djorge on 8/5/23.
+  
+*/
+"username"="Nombre de usuario";
+"password"="Contraseña";
+"login"="Entrar";
+"signup"="Registrarte";

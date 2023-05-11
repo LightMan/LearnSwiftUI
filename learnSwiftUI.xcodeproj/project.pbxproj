@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA5DDB1B2A092B9200F7BA98 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DDB1A2A092B9200F7BA98 /* ColorExtension.swift */; };
+		FA5DE60A2A08CD29005855CF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA5DE60C2A08CD29005855CF /* Localizable.strings */; };
 		FA8AF00F2A079619000EA66E /* learnSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AF00E2A079619000EA66E /* learnSwiftUIApp.swift */; };
 		FA8AF0112A079619000EA66E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AF0102A079619000EA66E /* ContentView.swift */; };
 		FA8AF0132A07961E000EA66E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8AF0122A07961E000EA66E /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 		FA8AF0202A07961F000EA66E /* learnSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AF01F2A07961F000EA66E /* learnSwiftUITests.swift */; };
 		FA8AF02A2A07961F000EA66E /* learnSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AF0292A07961F000EA66E /* learnSwiftUIUITests.swift */; };
 		FA8AF02C2A07961F000EA66E /* learnSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AF02B2A07961F000EA66E /* learnSwiftUIUITestsLaunchTests.swift */; };
+		FA8AF03D2A0798C6000EA66E /* LearnSwiftPM in Frameworks */ = {isa = PBXBuildFile; productRef = FA8AF03C2A0798C6000EA66E /* LearnSwiftPM */; };
+		FAF8373B2A092EFE00424608 /* BioCheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8373A2A092EFE00424608 /* BioCheckButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA5DDB1A2A092B9200F7BA98 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		FA5DE60B2A08CD29005855CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FA5DE60D2A08CD2C005855CF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FA8AF00B2A079619000EA66E /* learnSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learnSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8AF00E2A079619000EA66E /* learnSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learnSwiftUIApp.swift; sourceTree = "<group>"; };
 		FA8AF0102A079619000EA66E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +51,8 @@
 		FA8AF0252A07961F000EA66E /* learnSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = learnSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8AF0292A07961F000EA66E /* learnSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learnSwiftUIUITests.swift; sourceTree = "<group>"; };
 		FA8AF02B2A07961F000EA66E /* learnSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learnSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FA8AF03A2A07970F000EA66E /* LearnSwiftPM */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = LearnSwiftPM; path = ../LearnSwiftPM; sourceTree = "<group>"; };
+		FAF8373A2A092EFE00424608 /* BioCheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioCheckButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8AF03D2A0798C6000EA66E /* LearnSwiftPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +84,12 @@
 		FA8AF0022A079619000EA66E = {
 			isa = PBXGroup;
 			children = (
+				FA8AF0382A079636000EA66E /* Packages */,
 				FA8AF00D2A079619000EA66E /* learnSwiftUI */,
 				FA8AF01E2A07961F000EA66E /* learnSwiftUITests */,
 				FA8AF0282A07961F000EA66E /* learnSwiftUIUITests */,
 				FA8AF00C2A079619000EA66E /* Products */,
+				FA8AF03B2A0798C6000EA66E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,8 +108,11 @@
 			children = (
 				FA8AF00E2A079619000EA66E /* learnSwiftUIApp.swift */,
 				FA8AF0102A079619000EA66E /* ContentView.swift */,
+				FAF8373A2A092EFE00424608 /* BioCheckButton.swift */,
+				FA5DDB1A2A092B9200F7BA98 /* ColorExtension.swift */,
 				FA8AF0122A07961E000EA66E /* Assets.xcassets */,
 				FA8AF0142A07961E000EA66E /* Preview Content */,
+				FA5DE60C2A08CD29005855CF /* Localizable.strings */,
 			);
 			path = learnSwiftUI;
 			sourceTree = "<group>";
@@ -127,6 +142,21 @@
 			path = learnSwiftUIUITests;
 			sourceTree = "<group>";
 		};
+		FA8AF0382A079636000EA66E /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				FA8AF03A2A07970F000EA66E /* LearnSwiftPM */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		FA8AF03B2A0798C6000EA66E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +173,9 @@
 			dependencies = (
 			);
 			name = learnSwiftUI;
+			packageProductDependencies = (
+				FA8AF03C2A0798C6000EA66E /* LearnSwiftPM */,
+			);
 			productName = learnSwiftUI;
 			productReference = FA8AF00B2A079619000EA66E /* learnSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -213,6 +246,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = FA8AF0022A079619000EA66E;
 			productRefGroup = FA8AF00C2A079619000EA66E /* Products */;
@@ -232,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA8AF0162A07961E000EA66E /* Preview Assets.xcassets in Resources */,
+				FA5DE60A2A08CD29005855CF /* Localizable.strings in Resources */,
 				FA8AF0132A07961E000EA66E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5DDB1B2A092B9200F7BA98 /* ColorExtension.swift in Sources */,
 				FA8AF0112A079619000EA66E /* ContentView.swift in Sources */,
 				FA8AF00F2A079619000EA66E /* learnSwiftUIApp.swift in Sources */,
+				FAF8373B2A092EFE00424608 /* BioCheckButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +330,18 @@
 			targetProxy = FA8AF0262A07961F000EA66E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA5DE60C2A08CD29005855CF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA5DE60B2A08CD29005855CF /* en */,
+				FA5DE60D2A08CD2C005855CF /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FA8AF02D2A07961F000EA66E /* Debug */ = {
@@ -583,6 +632,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA8AF03C2A0798C6000EA66E /* LearnSwiftPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LearnSwiftPM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA8AF0032A079619000EA66E /* Project object */;
 }
