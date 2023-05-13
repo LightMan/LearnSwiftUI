@@ -9,9 +9,10 @@ import SwiftUI
 
 struct BioCheckButton: View {
   
-  @State private var selected: Bool
+  @State private var selected: Bool = false
   @State private var fillColor: Color
   @State private var shadowWhite: Double
+  @State private var shadowOffset: Double
 
   let titleKey: String
   let action: () -> Void
@@ -21,9 +22,9 @@ struct BioCheckButton: View {
     self.selected = selected;
     self.action = action
 
-    fillColor = selected ? Color.init(.sRGB, white: 0.8, opacity: 1.0) : Color.init(.sRGB, white: 0.9, opacity: 1.0)
+    fillColor = selected ? Color(white: 0.85, opacity: 0.6) : Color(white: 0.96, opacity: 0.6)
     shadowWhite = selected ? 0.4 : 0.9
-    
+    shadowOffset = selected ? -1.0 : 1.0
   }
   
   var body: some View {
@@ -34,19 +35,11 @@ struct BioCheckButton: View {
         .shadow(color: Color.white, radius: 5, x: -5, y: -5)
         .shadow(color: Color.gray, radius: 5, x: 5, y: 5)
         .overlay(content: {
-          if selected {
-            Circle()
-              .fill(Color(white: 0.85, opacity: 0.6))
-              .frame(width: 25, height: 25)
-              .shadow(color: Color.gray, radius: 1.0, x: -1.0, y: -1.0)
-              .shadow(color: Color.white, radius: 1.0, x: 1.0, y: 1.0)
-          } else {
-            Circle()
-              .fill(Color(white: 0.96, opacity: 0.6))
-              .frame(width: 25, height: 25)
-              .shadow(color: Color.gray, radius: 1.0, x: 1.0, y: 1.0)
-              .shadow(color: Color.white, radius: 1.0, x: -1.0, y: -1.0)
-          }
+          Circle()
+            .fill(fillColor)
+            .frame(width: 25, height: 25)
+            .shadow(color: Color.gray, radius: 1.0, x: shadowOffset, y: shadowOffset)
+            .shadow(color: Color.white, radius: 1.0, x: -shadowOffset, y: -shadowOffset)
         })
       
       Text(LocalizedStringKey(titleKey))
@@ -58,9 +51,10 @@ struct BioCheckButton: View {
     }.onTapGesture {
       selected = !selected
       action()
-      withAnimation(.linear(duration: 1)) {
-        fillColor = selected ? Color.init(.sRGB, white: 0.8, opacity: 1.0) : Color.init(.sRGB, white: 0.9, opacity: 1.0)
+      withAnimation(.spring(response: 0.2, dampingFraction: 0.4, blendDuration: 0.2)) {
+        fillColor = selected ? Color(white: 0.85, opacity: 0.6) : Color(white: 0.96, opacity: 0.6)
         shadowWhite = selected ? 0.4 : 0.9
+        shadowOffset = selected ? -1.0 : 1.0
       }
     }
   }

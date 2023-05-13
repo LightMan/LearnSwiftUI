@@ -24,7 +24,7 @@ struct ContentView: View {
 
   var body: some View {
     ZStack {
-      Color.smoke.ignoresSafeArea()
+      Theme.primaryColor.ignoresSafeArea()
 
       VStack{
         
@@ -42,8 +42,7 @@ struct ContentView: View {
           BioCheckButton(titleKey: "login", selected: false, action: login)
           BioCheckButton(titleKey: "signup", selected: true, action: login)
           Spacer()
-        }
-        
+        }        
         Spacer()
       }
       .padding()
@@ -51,7 +50,7 @@ struct ContentView: View {
   }
   
   func login() {
-    debugPrint("Login pressed username:\(username) password:\(password)")
+//    debugPrint("Login pressed username:\(username) password:\(password)")
   }
 }
 
