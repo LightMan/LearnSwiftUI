@@ -24,7 +24,7 @@ struct ContentView: View {
 
   var body: some View {
     ZStack {
-      Theme.primaryColor.ignoresSafeArea()
+      Theme.colorBackground.ignoresSafeArea()
 
       VStack{
         
@@ -58,6 +58,7 @@ struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
     Group {
       ContentView()
+        
     }
   }
 }

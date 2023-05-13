@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA5DDB1B2A092B9200F7BA98 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DDB1A2A092B9200F7BA98 /* ColorExtension.swift */; };
+		FA23F6A52A0FF4F400665056 /* Baloo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA23F6A42A0FF4F400665056 /* Baloo-Regular.ttf */; };
+		FA23F6A82A0FF51700665056 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23F6A72A0FF51700665056 /* Constants.swift */; };
+		FA23F6AA2A0FF55500665056 /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA23F6A92A0FF55500665056 /* UserDefaultsUtils.swift */; };
+		FA5DDB1B2A092B9200F7BA98 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5DDB1A2A092B9200F7BA98 /* Theme.swift */; };
 		FA5DE60A2A08CD29005855CF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA5DE60C2A08CD29005855CF /* Localizable.strings */; };
 		FA8AF00F2A079619000EA66E /* learnSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AF00E2A079619000EA66E /* learnSwiftUIApp.swift */; };
 		FA8AF0112A079619000EA66E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AF0102A079619000EA66E /* ContentView.swift */; };
@@ -38,7 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FA5DDB1A2A092B9200F7BA98 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		FA23F6A42A0FF4F400665056 /* Baloo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baloo-Regular.ttf"; sourceTree = "<group>"; };
+		FA23F6A72A0FF51700665056 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../../../LearnSwiftUI/learnSwiftUI/Utils/Constants.swift; sourceTree = "<group>"; };
+		FA23F6A92A0FF55500665056 /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDefaultsUtils.swift; path = ../../../LearnSwiftUI/learnSwiftUI/Utils/UserDefaultsUtils.swift; sourceTree = "<group>"; };
+		FA5DDB1A2A092B9200F7BA98 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		FA5DE60B2A08CD29005855CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FA5DE60D2A08CD2C005855CF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FA8AF00B2A079619000EA66E /* learnSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learnSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +87,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA23F6A02A0FF43300665056 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA23F6A32A0FF4B400665056 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FA23F6A42A0FF4F400665056 /* Baloo-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FA23F6A62A0FF50700665056 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FA5DDB1A2A092B9200F7BA98 /* Theme.swift */,
+				FA23F6A72A0FF51700665056 /* Constants.swift */,
+				FA23F6A92A0FF55500665056 /* UserDefaultsUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		FA8AF0022A079619000EA66E = {
 			isa = PBXGroup;
 			children = (
@@ -106,10 +137,12 @@
 		FA8AF00D2A079619000EA66E /* learnSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				FA23F6A62A0FF50700665056 /* Utils */,
+				FA23F6A32A0FF4B400665056 /* Fonts */,
+				FA23F6A02A0FF43300665056 /* Extensions */,
 				FA8AF00E2A079619000EA66E /* learnSwiftUIApp.swift */,
 				FA8AF0102A079619000EA66E /* ContentView.swift */,
 				FAF8373A2A092EFE00424608 /* BioCheckButton.swift */,
-				FA5DDB1A2A092B9200F7BA98 /* ColorExtension.swift */,
 				FA8AF0122A07961E000EA66E /* Assets.xcassets */,
 				FA8AF0142A07961E000EA66E /* Preview Content */,
 				FA5DE60C2A08CD29005855CF /* Localizable.strings */,
@@ -266,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA8AF0162A07961E000EA66E /* Preview Assets.xcassets in Resources */,
+				FA23F6A52A0FF4F400665056 /* Baloo-Regular.ttf in Resources */,
 				FA5DE60A2A08CD29005855CF /* Localizable.strings in Resources */,
 				FA8AF0132A07961E000EA66E /* Assets.xcassets in Resources */,
 			);
@@ -292,10 +326,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA5DDB1B2A092B9200F7BA98 /* ColorExtension.swift in Sources */,
+				FA23F6AA2A0FF55500665056 /* UserDefaultsUtils.swift in Sources */,
+				FA5DDB1B2A092B9200F7BA98 /* Theme.swift in Sources */,
 				FA8AF0112A079619000EA66E /* ContentView.swift in Sources */,
 				FA8AF00F2A079619000EA66E /* learnSwiftUIApp.swift in Sources */,
 				FAF8373B2A092EFE00424608 /* BioCheckButton.swift in Sources */,
+				FA23F6A82A0FF51700665056 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
